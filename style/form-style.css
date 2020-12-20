@@ -1,0 +1,65 @@
+.subscription-form {
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 1),
+    rgba(152, 239, 248, 0.8)
+  );
+  border: 2px solid rgb(90, 182, 243);
+  grid-area: 'frm';
+}
+.sub-form {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  padding: 10px;
+}
+#sub-header {
+  font-size: 18px;
+  margin: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+.sub-form label {
+  display: block;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.sub-form input {
+  padding: 5px;
+  width: 250px;
+  font-size: 16px;
+  background-color: #97fafa;
+  border: 1.5px solid #2ce4e4;
+}
+
+.sub-form input:focus {
+  outline: none;
+  background-color: #ffffff;
+  transition: ease-out 0.3s;
+}
+#subscribe {
+  width: 200px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Lato', sans-serif;
+  border-radius: 15px;
+  padding: 5px;
+  border: 2px solid rgb(90, 182, 243);
+  background-color: rgba(177, 255, 254, 0.7);
+}
+#subscribe:hover {
+  background-color: #1cc9f5;
+  transition: ease-in 0.2s;
+}
+
+@media (min-width: 900px) {
+  .sub-form {
+    grid-template-columns: auto auto;
+  }
+  .sub-form input {
+    width: 300px;
+  }
+}

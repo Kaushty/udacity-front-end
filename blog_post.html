@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blogpage</title>
+    <link rel="stylesheet" href="./style/blog_style.css" />
+    <link rel="icon" href="./res/favicon.png" type="image/gif" sizes="16x16" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="sidenav">
+      <div class="mid">
+        <h1>Recent Blogs</h1>
+        <a href="#">Impact of Blockchain Technology </a>
+        <a href="#">Scope of Machine Learning</a>
+        <a href="#">Future Self Driving Cars</a>
+        <a href="#">Avation Technology</a>
+      </div>
+    </div>
+    <div class="main">
+      <div class="header">
+        <div class="blogsite-logo">
+          <figure>
+            <img src="./res/logo_transparent.png" alt="Website logo" />
+          </figure>
+        </div>
+        <div class="blogsite-title">
+          <h1 id="title">Blog Troupe</h1>
+          <p id="tag-line">One stop for all tech blogs</p>
+        </div>
+        <div class="header-nav-links">
+          <nav>
+            <ul class="nav-ul">
+              <li class="items"><a id="home" href="./index.html">Home</a></li>
+              <li class="items"><a href="#">Contact</a></li>
+              <li class="items"><a href="#subscribe">Subscribe</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="blog">
+        <h2 id="blog-header">Title: React JS</h2>
+        <div class="blog-info">
+          <!-- Avatar -->
+          <img id="author-avatar" src="./res/avatar.png" alt="author image" />
+          <div class="author-info">
+            <h3 id="blog-author">Tom Cruise</h3>
+            <h4>Web Developer</h4>
+            <p>Google Inc.</p>
+            <p>I like to jump over buildings.</p>
+          </div>
+          <div class="social-sharing">
+            <!-- social sharing -->
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+          </div>
+        </div>
+        <div class="blog-content">
+          <figure>
+            <img class="cnt-logo" src="./res/react-logo.webp" alt="" />
+            <figcaption class="cnt-logo">ReactJS</figcaption>
+          </figure>
+          <p class="heading">Overview</p>
+          <p>
+            <strong
+              >React (also known as React.js or ReactJS) is a JavaScript library
+              for building user interfaces.</strong
+            >
+            It is maintained by Facebook and a community of individual
+            developers and companies. React can be used as a base in the
+            development of single-page or mobile applications. However, React is
+            only concerned with rendering data to the DOM, and so creating React
+            applications usually requires the use of additional libraries for
+            state management and routing. Redux and React Router are respective
+            examples of such libraries.
+          </p>
+
+          <p class="heading">Declarative</p>
+          <p>
+            React makes it painless to create interactive UIs. Design simple
+            views for each state in your application, and React will efficiently
+            update and render just the right components when your data changes.
+            Declarative views make your code more predictable and easier to
+            debug.
+          </p>
+          <p class="heading">Component-Based</p>
+          <p>
+            Build encapsulated components that manage their own state, then
+            compose them to make complex UIs. Since component logic is written
+            in JavaScript instead of templates, you can easily pass rich data
+            through your app and keep state out of the DOM.
+          </p>
+          <p class="heading">Learn Once, Write Anywhere</p>
+          <p>
+            We don’t make assumptions about the rest of your technology stack,
+            so you can develop new features in React without rewriting existing
+            code. React can also render on the server using Node and power
+            mobile apps using React Native.
+          </p>
+          <br />
+          <div class="code">
+            <br />
+            <p>
+              class HelloMessage extends React.Component { <br />
+              render() { <br />
+              return ( <br />
+              <!-- <div>        -->
+              Hello {this.props.name} <br />
+              <!-- </div> -->
+              <br />
+              &nbsp;&nbsp;); <br />
+              &nbsp;} <br />
+              } <br />
+              <br />
+              ReactDOM.render( <br />
+              <HelloMessage name="Taylor" />, <br />
+              document.getElementById('hello-example') <br />
+              );
+            </p>
+            <br />
+          </div>
+          <br />
+          <p class="heading">A Simple Component</p>
+          <p>
+            React components implement a render() method that takes input data
+            and returns what to display. This example uses an XML-like syntax
+            called JSX. Input data that is passed into the component can be
+            accessed by render() via <span>this.props</span>. JSX is optional
+            and not required to use React. Try the Babel REPL to see the raw
+            JavaScript code produced by the JSX compilation step.
+          </p>
+          <p class="heading">Virtual DOM</p>
+          <p>
+            Another notable feature is the use of a virtual Document Object
+            Model, or virtual DOM. React creates an in-memory data-structure
+            cache, computes the resulting differences, and then updates the
+            browser's displayed DOM efficiently. This allows the programmer to
+            write code as if the entire page is rendered on each change, while
+            the React libraries only render subcomponents that actually change.
+          </p>
+          <p class="heading">Lifecycle methods</p>
+          <p>
+            Lifecycle methods are hooks that allow execution of code at set
+            points during a component's lifetime.
+          </p>
+          <ul class="content-list">
+            <li>
+              <p>
+                <span>shouldComponentUpdate</span> allows the developer to
+                prevent unnecessary re-rendering of a component by returning
+                false if a render is not required.
+              </p>
+            </li>
+            <li>
+              <p>
+                <span>componentDidMount</span> is called once the component has
+                "mounted" (the component has been created in the user interface,
+                often by associating it with a DOM node). This is commonly used
+                to trigger data loading from a remote source via an API.
+              </p>
+            </li>
+            <li>
+              <p>
+                <span>componentWillUnmount</span> is called immediately before
+                the component is torn down or "unmounted". This is commonly used
+                to clear resource demanding dependencies to the component that
+                will not simply be removed with the unmounting of the component
+                (e.g., removing any setInterval() instances that are related to
+                the component, or an "eventListener" set on the "document"
+                because of the presence of the component)
+              </p>
+            </li>
+            <li>
+              <p>
+                <span>render</span> is the most important lifecycle method and
+                the only required one in any component. It is usually called
+                every time the component's state is updated, which should be
+                reflected in the user interface.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="subscription-form">
+        <h2 id="sub-header">Subscribe to our Newsletter</h2>
+        <form class="sub-form" action="#">
+          <div>
+            <label for="fname"> First Name</label>
+            <input id="fname" type="text" required />
+          </div>
+          <div>
+            <label for="lname"> Last Name</label>
+            <input id="fname" type="text" required />
+          </div>
+          <div>
+            <label for="email">Email Id</label>
+            <input id="email" type="email" required />
+          </div>
+          <br />
+          <input type="submit" name="Submit" id="subscribe" />
+        </form>
+      </div>
+      <footer>
+        <div class="title">
+          <h2>Blog Troupe</h2>
+          <p>One stop for all tech blogs</p>
+        </div>
+        <div class="navigation">
+          <ul class="footer-list">
+            <li><a class="links" href="#">About</a></li>
+            <li><a class="links" href="#">Ideas</a></li>
+            <li><a class="links" href="#">Careers</a></li>
+          </ul>
+        </div>
+        <div class="navigation">
+          <ul class="footer-list">
+            <li><a class="links" href="#">Contact</a></li>
+            <li><a class="links" href="#">Events</a></li>
+            <li><a class="links" href="#">Policy</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

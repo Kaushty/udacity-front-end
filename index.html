@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog Page</title>
+    <link rel="icon" href="./res/favicon.png" type="image/gif" sizes="16x16" />
+    <link rel="stylesheet" type="text/css" href="./style/home_style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <!-- Side navigation -->
+    <div class="sidenav">
+      <div class="mid">
+        <h1>Recent Blogs</h1>
+        <a href="#">Impact of Blockchain Technology </a>
+        <a href="#">Scope of Machine Learning</a>
+        <a href="#">Future Self Driving Cars</a>
+        <a href="#">Avation Technology</a>
+      </div>
+    </div>
+    <div class="main">
+      <div class="header">
+        <div class="blogsite-logo">
+          <img src="./res/logo_transparent.png" alt="Website logo" />
+        </div>
+        <div class="blogsite-title">
+          <h1 id="title">Blog Troupe</h1>
+          <p id="tag-line">One stop for all tech blogs</p>
+        </div>
+        <div class="header-nav-links">
+          <nav>
+            <ul class="nav-ul">
+              <li class="items"><a id="home" href="#">Home</a></li>
+              <li class="items"><a href="#">Content</a></li>
+              <li class="items"><a href="#">Subscribe</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="content">
+        <div class="content-cards">
+          <div class="card" id="card-1">
+            <h2 class="blog-title">Title: ReactJS</h2>
+            <div class="blog-body">
+              <img
+                class="blog-img"
+                src="./res/react-logo.webp"
+                alt="React logo"
+              />
+              <h3 class="author">Author: Tom Cruise</h3>
+              <p class="overview">
+                React (also known as React.js or ReactJS) is a JavaScript
+                library for building user interfaces. It is maintained by
+                Facebook and a community of individual developers and companies.
+              </p>
+              <button
+                onclick="window.location.href = './blog_post.html'"
+                class="read-more"
+              >
+                Read more ....
+              </button>
+            </div>
+          </div>
+          <div class="card" id="card-2">
+            <h2 class="blog-title">Title: AngularJS</h2>
+            <div class="blog-body">
+              <img class="blog-img" src="./res/angular.png" alt="React logo" />
+              <h3 class="author">Author: Jacob Sterling</h3>
+              <p class="overview">
+                AngularJS is a JavaScript-based open-source front-end web
+                framework mainly maintained by Google and by a community of
+                individuals and corporations to address many of the challenges
+                encountered in developing single-page applications.
+              </p>
+              <button
+                onclick="window.location.href = './blog_post.html'"
+                class="read-more"
+              >
+                Read more ....
+              </button>
+            </div>
+          </div>
+          <div class="card" id="card-3">
+            <h2 class="blog-title">Title: NodeJs</h2>
+            <div class="blog-body">
+              <img class="blog-img" src="./res/nodejs.png" alt="React logo" />
+              <h3 class="author">Author: Jason Mamoa</h3>
+              <p class="overview">
+                Node.js is an open-source, cross-platform, JavaScript runtime
+                environment that executes JavaScript code outside of a web
+                browser. Node.js lets developers use JavaScript to write command
+                line tools and for server-side scripting—running scripts
+                server-side to produce dynamic web page content before the page
+                is sent to the user's web browser.
+              </p>
+              <button
+                onclick="window.location.href = './blog_post.html'"
+                class="read-more"
+              >
+                Read more ....
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="subscription-form">
+        <h2 id="sub-header">Subscribe to our Newsletter</h2>
+        <form class="sub-form" action="#">
+          <div>
+            <label for="fname"> First Name</label>
+            <input id="fname" type="text" required />
+          </div>
+          <div>
+            <label for="lname"> Last Name</label>
+            <input id="fname" type="text" required />
+          </div>
+          <div>
+            <label for="email">Email Id</label>
+            <input id="email" type="email" required />
+          </div>
+          <br />
+          <input type="submit" name="Submit" id="subscribe" />
+        </form>
+      </div>
+      <footer>
+        <div class="title">
+          <h2>Blog Troupe</h2>
+          <p>One stop for all tech blogs</p>
+        </div>
+        <div class="navigation">
+          <ul class="footer-list">
+            <li><a class="links" href="#">About</a></li>
+            <li><a class="links" href="#">Ideas</a></li>
+            <li><a class="links" href="#">Careers</a></li>
+          </ul>
+        </div>
+        <div class="navigation">
+          <ul class="footer-list">
+            <li><a class="links" href="#">Contact</a></li>
+            <li><a class="links" href="#">Events</a></li>
+            <li><a class="links" href="#">Policy</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
