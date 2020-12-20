@@ -6,8 +6,6 @@ In the branches of this repository you'll find the front-end projects that I dev
 
 ## Projects
 
-### Capstone Project : Travel App
-
 #### Project 1: Blog Website
 
 #### Project 2: Landing Page
@@ -15,3 +13,5 @@ In the branches of this repository you'll find the front-end projects that I dev
 #### Project 3: News Website using NLP API
 
 #### Project 4: Weather App
+
+### Capstone Project : Travel App
