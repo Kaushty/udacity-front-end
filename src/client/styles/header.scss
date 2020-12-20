@@ -1,0 +1,22 @@
+$base-color: #f0ebeb;
+$background-color: #292424;
+
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: $base-color;
+	margin-bottom: 10px;
+}
+
+#head-logo {
+    width: 100px;
+	height: auto;
+	border-radius: 20px;
+	margin: 15px;
+}
+
+#head-title{
+	font-family: 'Montserrat', serif;	
+	font-size: 27px;
+} 

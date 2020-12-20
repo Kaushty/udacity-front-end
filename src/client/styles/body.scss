@@ -1,0 +1,56 @@
+.info{
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    padding: 10px 0;
+}
+.info h2{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.info p{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+#steps{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+}
+
+form{
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+}
+form label{
+    font-size: 18px;
+    padding: 10px 0;
+}
+form input{
+    display: block;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    width: 40vw;
+    margin: 10px;
+}
+
+#name{
+    background-color: #f1eeeec5;
+}
+
+#btn-submit{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800;
+    background-color: #464141;
+    border: none;
+    color: #f0ebeb;
+    border-radius: 25px;
+    transition:  ease-in 0.3s;
+}
+
+#btn-submit:hover{
+    background-color: #f1eeeec5;
+    color: #000000;
+}

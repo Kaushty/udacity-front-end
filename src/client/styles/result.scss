@@ -1,0 +1,32 @@
+.nlp-res{
+    max-height: initial;
+    margin-top: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+#res-title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 21px;
+}
+
+#results{
+    display: inline-block;
+    padding: 10px;
+    font-family: 'Lucida Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+.dissapear{
+    display: none;
+}
+
+#results > div{
+    padding: 10px;
+}
+
+#error-out{
+    color: red;
+    font-size: 15px;
+    text-align: center;
+}

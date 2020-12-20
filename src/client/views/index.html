@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>News NLP</title>
+    </head>
+
+    <body>
+        <header>
+            <div>
+                <img  id="head-logo" src="../res/logo.png" alt="aylien-logo">
+            </div>
+            <div >
+                <h1 id="head-title">NLP using Aylien API</h1>
+            </div>
+        </header>
+
+        <main>
+            <div class="info">
+                <h2>This website uses Aylien's Natural Language Processing APIs to process an news article</h2>
+                <p>The AYLIEN Text Analysis API is a package of Natural Language Processing and Machine Learning-powered APIs for analyzing and extracting various kinds of information from textual content.</p>            
+                <p id="steps">Enter the url of a news article in the field below and click on the submit button.</p>
+                <section>
+                    <form  onsubmit=" return Client.handleSubmit(event)">
+                        <!-- <label for="name">Enter Url</label> -->
+                        <input id="name" type="text" name="input" value="" placeholder="Enter Url" required>
+                        <input id="btn-submit" type="submit" value="Submit" >
+                    </form>
+                </section>
+            </div>
+            <div class="nlp-res">
+                <h3 id="res-title">NLP Results</h3>
+                <div id="results">
+                    <div id="polarity"> </div>
+                    <div id="subjectivity"> </div>
+                    <div id="polarity-con"> </div>
+                    <div id="subject-con"></div>
+                    <div id="text"></div>
+                </div>
+            </div>
+            <div id="error-out"></div>
+        </main>
+
+        <footer>
+            <p>Created by Kaushik Shetty | Udacity Front-End Nanodegree Program</p>
+        </footer>
+        <script>
+            // Check that service workers are supported
+            if ('serviceWorker' in navigator) {
+                // Use the window load event to keep the page load performant
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+        </script>
+
+    </body>
+</html>
