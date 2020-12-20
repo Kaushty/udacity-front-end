@@ -1,0 +1,88 @@
+$background-color : #24252A;
+$base-font: 'Monsterrat';
+$font-color: #edf0f1;
+
+.submit_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    font-family: $base-font, sans-serif;
+    color: $font-color;
+    font-size: 16px;
+}
+
+#body_info {
+    font-size: 23px;    
+}
+
+.input_fields {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.input_fields input {
+    padding: 5px;
+    margin: 10px 0;
+    font-size: 16px;
+    border-radius: 10px;
+    transition: all 0.3s ease 0s;
+    box-shadow: 0 0 4px #999;
+}
+
+#place-name {
+    width: 500px;
+    font-size: 18px;
+    // margin: 0 20px;
+}
+
+#place-name:focus, #start-date:focus {
+    outline: none;
+    transform: scaleX(1.1);
+}
+
+#btn-sub {
+    padding: 9px 25px;
+    // background-color: rgba(0, 136, 169, 1);
+    background-color: #008cff;
+    box-shadow: 0 0 4px #999;
+    border: none;
+    color: #edf0f1;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin: 20px 0;
+}
+
+#btn-sub:hover {
+    background-color: #0d67b1;
+}
+
+#btn-sub:focus {
+    outline: none;
+}
+
+.ripple {
+    background-position: center;
+    transition: background 0.8s;
+}
+.ripple:hover {
+    background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+}
+.ripple:active {
+    background-color: #6eb9f7;
+    background-size: 100%;
+    transition: background 0s;
+}
+
+#invalid-message , #fetch-failed {
+    text-align: center;
+    font-size: 19px;
+    color: #edf0f1;
+    font-family: 'Montserrat', sans-serif;
+}

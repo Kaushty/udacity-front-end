@@ -1,0 +1,60 @@
+$background-color : #24252A;
+$base-font: 'Monsterrat';
+$font-color: #edf0f1;
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: $background-color;
+    font-family: $background-color, sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.logo {
+    margin-right: auto;
+    cursor: pointer;
+    width: 250px;
+    height: auto;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0 20px;
+    margin-top: 10px;    
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    color: $font-color;
+}
+
+.nav_links li a:hover {
+    color: #0088a9;
+}
+
+#btn_contact {
+    padding: 9px 25px;
+    background-color: #2196f3;
+    border: none;
+    color: #edf0f1;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-left: 20px;
+}
+
+#btn_contact:hover {
+    background-color: rgba(0, 136, 169, 0.5);
+}
+
+#btn_contact:focus{
+    outline: none;
+}
