@@ -2,7 +2,7 @@
 
 ### A repository to store all projects developed as part of Udacity's Front-End Nanodegree Program
 
-In the branches of this repository you'll find the front-end projects that I developed while undergoing the program<br>
+The branches of this repository hold the front-end projects that I developed while undergoing the program. <br>
 
 ## Projects
 
