@@ -1,0 +1,46 @@
+
+#entryHolder{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    grid-template-rows: auto    ;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    opacity: 1;
+}
+
+#entryHolder > div{
+    margin: 5px 0;
+    opacity: 1;
+    max-width: inherit;
+}
+
+#place{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4em;
+    margin: 10px 0;
+}
+
+#desc-data{
+    padding: 10px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#desc{
+    padding: 10px;
+}
+
+/* Styling for when the data is visible*/
+.holder{
+    width: 500px;
+    margin:  15px auto;
+    border: 2px solid #b8b4ab;
+    border-radius: 20px;
+    background-color: #eee9de;
+    opacity: 0.8;
+} 

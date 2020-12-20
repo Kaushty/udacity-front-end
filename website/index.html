@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Weather App</title>
+        <link rel="stylesheet" href="./style/style_main.css">
+    </head>
+    <body>
+        <div class="form">
+            <h1 id="heading">Weather App</h1>
+
+            <div>
+                <label for="text">Zip Code</label>
+                <input class="input" type="text" id="zip" placeholder="Enter Zip code" required>
+            </div>
+
+           <div>
+                <label for="contCode">Country Code</label>
+                <input class="input" type="text" id="contCode" placeholder="Enter Country code Eg:in" required>
+           </div>
+
+            <label class="inp-content" for="contCode">How are you feeling today !!</label>
+            <textarea class="inp-content" id="feelings" rows="9" cols="40"></textarea>
+
+            <button class="input" id="generate">Submit</button>
+            <!-- <input type="submit" name="Submit" id="generate"> -->
+        </div>
+        <div class="" id="container" >
+            <div id="entryHolder">
+                <h2 id="place"></h1>
+                    <div id="date"></div>
+                    <div id="temp"></div>
+                    <div id="desc-data">
+                        <div id="icon"></div>
+                        <div id="desc"></div>
+                    </div>
+                    <div id="content"></div>
+                </div>
+            </div>
+        <script src="./app.js"></script>
+    </body>
+</html>
